@@ -4,11 +4,11 @@ from PIL import Image
 from io import BytesIO
 import base64
 
-st.set_page_config(layout="wide", page_title="Image Background Remover")
+st.set_page_config(layout="wide", page_title="Recycle Analyser")
 
-st.write("## Remove background from your image")
+st.write("## To identify whether your item can be recycled")
 st.write(
-    ":dog: Try uploading an image to watch the background magically removed. Full quality images can be downloaded from the sidebar. This code is open source and available [here](https://github.com/tyler-simons/BackgroundRemoval) on GitHub. Special thanks to the [rembg library](https://github.com/danielgatis/rembg) :grin:"
+    ":dog: Item :grin:"
 )
 st.sidebar.write("## Upload and download :gear:")
 
@@ -39,4 +39,4 @@ my_upload = st.sidebar.file_uploader("Upload an image", type=["png", "jpg", "jpe
 if my_upload is not None:
     fix_image(upload=my_upload)
 else:
-    fix_image("./zebra.jpg")
+    fix_image("./1.jpeg")
