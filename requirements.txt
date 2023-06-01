@@ -1,7 +1,7 @@
 altair
 pandas
 streamlit
-PIL
+pillow
 tensorflow
 keras
 opencv-python
